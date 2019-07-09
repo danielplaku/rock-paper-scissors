@@ -1,12 +1,21 @@
 package entities;
 
-public class HandPlayer implements Player{
+public class HandPlayer extends Player {
 
+    private String name;
     private int points = 0;
     private Option option;
 
     public HandPlayer() {
         super();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getPoints() {

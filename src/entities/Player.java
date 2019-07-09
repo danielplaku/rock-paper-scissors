@@ -1,7 +1,8 @@
 package entities;
 
-public interface Player {
+public abstract class Player {
 
-    int getPoints();
+    public int name;
+    public abstract int getPoints();
 
 }

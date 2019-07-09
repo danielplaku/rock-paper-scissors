@@ -2,7 +2,7 @@ package playgame;
 
 import businesslogic.Games;
 
-public class Main {
+public class App {
 
     public static void main(String[] args) {
         Games.play();

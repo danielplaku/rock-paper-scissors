@@ -37,7 +37,6 @@ public class GameUtils {
      */
     public static String setChoice() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter: R -> for Rock, S -> for scissors, P -> for Paper");
 
         while (true) {
             String choice = input.next();
