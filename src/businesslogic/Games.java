@@ -4,7 +4,6 @@ import entities.Game;
 import entities.HandPlayer;
 import entities.Option;
 import entities.Rounds;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import utils.GameUtils;
 import utils.PlayerUtils;
 
@@ -102,7 +101,7 @@ public class Games extends Game {
                     handPlayers.get(0).setOption(Option.PAPER);
                     break;
                 default:
-                    throw new NotImplementedException();
+                    continue;
             }
 
             PlayerUtils.chooseRandomOption(handPlayers.get(1));

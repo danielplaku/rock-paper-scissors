@@ -1,6 +1,6 @@
 package entities;
 
-public class HandPlayer extends Player {
+public class HandPlayer implements Player {
 
     private String name;
     private int points = 0;

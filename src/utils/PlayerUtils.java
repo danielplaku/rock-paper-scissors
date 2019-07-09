@@ -11,7 +11,7 @@ import java.util.Random;
 public class PlayerUtils {
 
     private static Random random = new Random();
-    private static ArrayList<String> options = new ArrayList<>((Arrays.asList("R", "S", "P", "R")));
+    private static ArrayList<String> options = new ArrayList<>((Arrays.asList("R", "S", "P")));
 
     private PlayerUtils() {
     }

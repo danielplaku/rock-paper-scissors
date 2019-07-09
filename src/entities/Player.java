@@ -1,8 +1,9 @@
 package entities;
 
-public abstract class Player {
+public interface Player {
 
-    public int name;
-    public abstract int getPoints();
+    String getName();
+
+    int getPoints();
 
 }
