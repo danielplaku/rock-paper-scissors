@@ -1,19 +1,41 @@
-package entities;
+package businesslogic;
 
+import entities.Game;
+import entities.HandPlayer;
+import entities.Option;
+import entities.Rounds;
 import utils.GameUtils;
 import utils.PlayerUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Games extends Game{
+public class Games extends Game {
 
     private List<HandPlayer> handPlayers;
     private int numberOfPlayers;
 
-    public Games() {
+    private Games() {
         this.numberOfPlayers = 2;
         handPlayers = new ArrayList<>();
+    }
+
+    /**
+     * Initialize method from where we start to play.
+     */
+    public static void play() {
+        Games game = new Games();
+
+        System.out.println("Which game you wanna play?");
+        System.out.println("Enter: 1 -> for game one, 2 -> for game two.");
+
+        int gameNumber = GameUtils.getGameNumber();
+
+        if (gameNumber == 1) {
+            game.playGameOne();
+        } else if (gameNumber == 2) {
+            game.playGameTwo();
+        }
     }
 
     /**
