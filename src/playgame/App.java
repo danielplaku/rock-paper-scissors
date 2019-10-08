@@ -8,5 +8,7 @@ public class App {
 
         Games.play();
 
+        //just for testing purpose
+
     }
 }
